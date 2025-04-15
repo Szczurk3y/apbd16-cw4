@@ -26,7 +26,7 @@ namespace WebApplication1.Controllers
 
         // POST api/animals { Id = 5, Name = "Test kot 3", Category = "CAT", Weight = 4.1, Color = "Black" },
         [HttpPost]
-        public IActionResult Add(Animal animal)
+        public IActionResult Create([FromBody] Animal animal)
         {
             Database.Animals.Add(animal);
             return Created();
