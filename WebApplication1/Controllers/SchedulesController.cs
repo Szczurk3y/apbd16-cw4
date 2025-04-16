@@ -1,30 +1,27 @@
 ﻿using WebApplication1.Models;
-
-namespace WebApplication1.Controllers;
 using Microsoft.AspNetCore.Mvc;
 
-public class ScheduleController
+namespace WebApplication1.Controllers
 {
-    // app/schedule => [controller] = Animals
+    // app/schedules => [controller] = Animals
     [Route("api/[controller]")]
     [ApiController]
-    public class AnimalsController : ControllerBase
+    public class SchedulesController : ControllerBase
     {
-        // GET api/schedule/{id}
-        [HttpGet("{id:int}")]
+        // GET api/schedules/animal/{Id}
+        [HttpGet("animal/{Id:int}")]
         public IActionResult Index(int id)
         {
             var schedules = Database.Schedules.Where(s => s.AnimalId == id).ToList();
             return Ok(schedules);
         }
 
-        // POST api/schedule { Date = "15.04.2025", AnimalId = 2, Description = "Wizyta kontrolna", Price = 123.45 }
+        // POST api/schedules/ { Date = "15.04.2025", AnimalId = 2, Description = "Wizyta kontrolna", Price = 123.45 }
         [HttpPost]
         public IActionResult Add(Schedule schedule)
         {
             Database.Schedules.Add(schedule);
-            return Created();
+            return Ok("Schedule created.");
         }
     }
 }
-

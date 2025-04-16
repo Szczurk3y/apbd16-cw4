@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Praca\\studia\\semestr 6\\apbd\\apbd16-cw4\\WebApplication1\\WebApplication1.csproj": {}
+    "C:\\Users\\Maciek\\Desktop\\studia\\apbd\\apbd16-cw4\\WebApplication1\\WebApplication1.csproj": {}
   },
   "projects": {
-    "D:\\Praca\\studia\\semestr 6\\apbd\\apbd16-cw4\\WebApplication1\\WebApplication1.csproj": {
+    "C:\\Users\\Maciek\\Desktop\\studia\\apbd\\apbd16-cw4\\WebApplication1\\WebApplication1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Praca\\studia\\semestr 6\\apbd\\apbd16-cw4\\WebApplication1\\WebApplication1.csproj",
+        "projectUniqueName": "C:\\Users\\Maciek\\Desktop\\studia\\apbd\\apbd16-cw4\\WebApplication1\\WebApplication1.csproj",
         "projectName": "WebApplication1",
-        "projectPath": "D:\\Praca\\studia\\semestr 6\\apbd\\apbd16-cw4\\WebApplication1\\WebApplication1.csproj",
+        "projectPath": "C:\\Users\\Maciek\\Desktop\\studia\\apbd\\apbd16-cw4\\WebApplication1\\WebApplication1.csproj",
         "packagesPath": "C:\\Users\\Maciek\\.nuget\\packages\\",
-        "outputPath": "D:\\Praca\\studia\\semestr 6\\apbd\\apbd16-cw4\\WebApplication1\\obj\\",
+        "outputPath": "C:\\Users\\Maciek\\Desktop\\studia\\apbd\\apbd16-cw4\\WebApplication1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Maciek\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -37,7 +37,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -71,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\Maciek\\.dotnet\\sdk\\8.0.406/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\Maciek\\.dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

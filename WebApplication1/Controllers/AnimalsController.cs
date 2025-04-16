@@ -29,7 +29,7 @@ namespace WebApplication1.Controllers
         public IActionResult Create([FromBody] Animal animal)
         {
             Database.Animals.Add(animal);
-            return Created();
+            return Ok("Animal created");
         }
         
         // PUT api/animals/ { Id = 5, Name = "Test kot 3", Category = "CAT", Weight = 4.1, Color = "Black" },
@@ -38,7 +38,7 @@ namespace WebApplication1.Controllers
         {
             var index = Database.Animals.FindIndex(a => a.Id == animal.Id);
             Database.Animals[index] = animal;
-            return Ok();
+            return Ok("Animal updated.");
         }
 
         // DELETE api/animals/{id} => {id} = 1
@@ -47,7 +47,7 @@ namespace WebApplication1.Controllers
         {
             var index = Database.Animals.FindIndex(a => a.Id == id);
             Database.Animals.RemoveAt(index);
-            return Ok();
+            return Ok("Animal deleted");
         }
 
         [HttpGet("getbyname/{name}")]

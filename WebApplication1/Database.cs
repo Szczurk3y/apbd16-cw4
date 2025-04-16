@@ -19,6 +19,7 @@ public static class Database
     public static List<Schedule> Schedules = new List<Schedule>()
     {
         new Schedule() { Date = "15.04.2025", AnimalId = Animals[0].Id, Description = "Wizyta kontrolna", Price = 123.45 },
+        new Schedule() { Date = "23.05.2025", AnimalId = Animals[0].Id, Description = "Wizyta kontrolna 2", Price = 123.45 },
         new Schedule() { Date = "15.04.2025", AnimalId = Animals[1].Id, Description = "Pobieranie krwi", Price = 678 },
         new Schedule() { Date = "15.04.2025", AnimalId = Animals[2].Id, Description = "Usuwanie kamienia", Price = 45.89 },
         new Schedule() { Date = "15.04.2025", AnimalId = Animals[3].Id, Description = "Usg jamy brzusznej", Price = 119.10 }
